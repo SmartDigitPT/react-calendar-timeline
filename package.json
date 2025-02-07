@@ -1,5 +1,5 @@
 {
-  "name": "react-calendar-timeline",
+  "name": "@marciocamello/react-calendar-timeline",
   "version": "0.30.0-beta.2",
   "description": "react-calendar-timeline",
   "packageManager": "npm@10.1.0",
@@ -8,7 +8,8 @@
     "lint": "eslint --ext .ts --ext .tsx ./src",
     "lint:fix": "npm run lint --fix",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "publish:release": "npm publish"
   },
   "main": "./dist/react-calendar-timeline.umd.js",
   "module": "./dist/react-calendar-timeline.es.js",
@@ -26,50 +27,12 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/namespace-ee/react-calendar-timeline",
+  "homepage": "https://github.com/marciocamello/react-calendar-timeline",
   "repository": {
     "type": "git",
-    "url": "https://github.com/namespace-ee/react-calendar-timeline.git"
+    "url": "https://github.com/marciocamello/react-calendar-timeline.git"
   },
   "private": false,
-  "author": "Marius Andra <marius.andra@gmail.com>",
-  "contributors": [
-    {
-      "name": "Stanisław Chmiela",
-      "email": "sjchmiela@gmail.com"
-    },
-    {
-      "name": "Mike Joyce",
-      "url": "https://github.com/mcMickJuice"
-    },
-    {
-      "name": "Samuel Rossetti"
-    },
-    {
-      "name": "amakhrov",
-      "url": "https://github.com/amakhrov"
-    },
-    {
-      "name": "Ahmad Ilaiwi",
-      "url": "https://github.com/Ilaiwi"
-    },
-    {
-      "name": "dkarnutsch",
-      "url": "https://github.com/dkarnutsch"
-    },
-    {
-      "name": "Alex Maclean",
-      "url": "https://github.com/acemac"
-    },
-    {
-      "name": "Kevin Mann",
-      "url": "https://github.com/kevinmanncito"
-    },
-    {
-      "name": "Remco Blumink",
-      "url": ""
-    }
-  ],
   "license": "MIT",
   "keywords": [
     "react",
@@ -90,13 +53,12 @@
     "react-dom": ">=18"
   },
   "devDependencies": {
-    "rollup-plugin-typescript-paths": "^1.5.0",
-    "@types/lodash": "^4.14.202",
-    "@rollup/plugin-typescript": "^12.1.0",
     "@faker-js/faker": "^9.0.3",
+    "@rollup/plugin-typescript": "^12.1.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@types/element-resize-detector": "^1.1.6",
+    "@types/lodash": "^4.14.202",
     "@types/react": "^18.2.41",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^8.8.1",
@@ -121,6 +83,7 @@
     "randomcolor": "^0.6.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "rollup-plugin-typescript-paths": "^1.5.0",
     "sass": "^1.69.5",
     "typescript": "^5.2.2",
     "vite": "^5.4.8",
